@@ -5,8 +5,7 @@ import { AppService } from './app.service';
 import { ItemsModule } from './items/items.module';
 
 @Module({
-  imports: [ItemsModule,
-            TypeOrmModule.forRoot()],
+  imports: [ItemsModule],
   controllers: [AppController],
   providers: [AppService],
 })
